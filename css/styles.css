@@ -8,13 +8,34 @@
     --button-color: #ffffff;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
 }
 
+.section {
+    padding: 94px 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 .title {
     background: var(--background-secondary-color);
+    padding: 200px 452px 280px 452px;
 }
 
 .title-text {
@@ -23,6 +44,7 @@ body {
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
+    margin-bottom: 30px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -35,7 +57,7 @@ body {
     font-size: 16px;
     line-height: 1.8;
     padding: 10px 41px 10px 42px;
-    margin-left: 500px;
+    margin-top: 0;
     letter-spacing: 0.06em;
     color: var(--button-color);
     background-color: var(--interactive-buttons-links-color);
@@ -145,6 +167,8 @@ body {
 
 .header {
     border-bottom: 1px solid #ececec;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .footer {
@@ -337,6 +361,12 @@ body {
     color: var(--button-color);
 }
 
+.flex-portfolio-block-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 .portfolio-block-item {
     background: var(--background-color);
     border: 1px solid #eeeeee;
@@ -360,15 +390,6 @@ body {
     color: var(--secondary-text-color);
 }
 
-.container {
-    width: 1200px;
-}
-
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .flex {
     display: flex;
     flex-direction: row;
@@ -385,12 +406,6 @@ body {
     flex-direction: row;
     justify-content: center;
     margin-bottom: 50px;
-}
-
-.flex-portfolio-block-item {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
 }
 
 .buttons-margin {
@@ -426,21 +441,12 @@ body {
     padding-left: 99px;
 }
 
-.logo-header-padding-left {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    padding-left: 215px;
-}
-
-.logo-header-padding-right {
-    padding-top: 32px;
-    padding-right: 227px;
-    padding-bottom: 32px;
+.logo-header-margin-right {
+    margin-right: 93px;
 }
 
 .logo-footer-padding {
     padding-top: 60px;
-    padding-left: 215px;
 }
 
 .margin-footer {
@@ -453,6 +459,7 @@ body {
 
 .margin-nav-panel {
     margin-left: 93px;
+    padding: 32px;
 }
 
 .margin-nav-panel-items {
@@ -473,4 +480,8 @@ body {
 
 .margin-list-primary-description {
     margin-right: 30px;
+}
+
+.header-primary-description-margin {
+    margin-bottom: 10px;
 }
