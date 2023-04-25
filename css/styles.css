@@ -33,16 +33,17 @@ body {
     margin: 0 auto;
 }
 
-.title {
+.hero {
     background: var(--background-secondary-color);
-    padding: 200px 452px 280px 452px;
+    padding: 200px 252px;
+    text-align: center;
 }
 
-.title-text {
+.hero-text {
     color: var(--title-text-color);
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
+    line-height: 1.3636;
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 0.06em;
@@ -55,13 +56,12 @@ body {
     border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.875;
     padding: 10px 41px 10px 42px;
-    margin-top: 0;
-    margin-left: 400px;
     letter-spacing: 0.06em;
     color: var(--button-color);
     background-color: var(--interactive-buttons-links-color);
+    border: none;
 }
 
 .button:hover,
@@ -174,6 +174,7 @@ body {
 
 .footer {
     background: #2f303a;
+    padding: 60px 0;
 }
 
 .blue-text-logo {
@@ -370,15 +371,20 @@ body {
 
 .portfolio-block-item {
     background: var(--background-color);
-    border: 1px solid #eeeeee;
     flex-basis: calc((100% - 60px) / 3);
+}
+
+.portfolio-block-item-names {
+    border: 1px solid #eeeeee;
+    padding: 20px 24px;
+    margin-top: -6px;
 }
 
 .portfolio-block-item-name {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    padding: 20px 24px 4px 24px;
+    margin-bottom: 4px;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
 }
@@ -386,7 +392,6 @@ body {
 .portfolio-block-item-type {
     font-size: 16px;
     line-height: 1.88;
-    padding: 4px 24px 20px 24px;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
@@ -446,16 +451,14 @@ body {
     margin-right: 93px;
 }
 
-.logo-footer-padding {
-    padding-top: 60px;
+.footer-logo {
+    margin-bottom: 20px;
 }
 
-.margin-footer {
-    margin-top: 20px;
-}
-
-.margin-footer-items {
-    margin-bottom: 9px;
+.address-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
 }
 
 .margin-nav-panel {
@@ -485,4 +488,8 @@ body {
 
 .header-primary-description-margin {
     margin-bottom: 10px;
+}
+
+.services {
+    margin-top: -94px;
 }
